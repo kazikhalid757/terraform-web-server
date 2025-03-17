@@ -25,6 +25,7 @@ Before using this Terraform configuration, ensure that you have the following:
     aws configure
     ```
 4. **SSH Key Pair**: You need to have an SSH key pair in AWS for connecting to the EC2 instance.
+5. **S3 & DynamoDB Table**: You need to have an S3 & DynamoDB Table in AWS for configure Terraform backend storage and state locking.
 
 ---
 
