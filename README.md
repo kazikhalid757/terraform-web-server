@@ -1,7 +1,3 @@
-Here's a **complete README file** for your Terraform project, where you're deploying a simple EC2 instance and using a module for the EC2 setup:
-
----
-
 # Terraform Web Server Deployment
 
 This project uses Terraform to deploy a simple **web server (Apache or Nginx)** on an **AWS EC2 instance**. The infrastructure is defined using Terraform, and it includes a security group, an EC2 instance, and outputs for the instance's public IP address.
