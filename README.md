@@ -1,10 +1,3 @@
-Here’s a **professional `README.md`** file for your **Terraform-based S3 static website deployment** project, following industry best practices.  
-
----
-
-### **📌 `README.md` - Deploy a Static Website on AWS S3 Using Terraform**  
-
-```md
 # 🚀 Deploy a Static Website on AWS S3 Using Terraform
 
 This project uses **Terraform** to provision an **Amazon S3 bucket** and configure it for static website hosting. The infrastructure is fully automated, including **S3 bucket creation, bucket policies, and public access configuration**.
@@ -87,7 +80,6 @@ resource "aws_s3_bucket" "mywebapp-bucket" {
   bucket = var.bucket_name
   website {
     index_document = "index.html"
-    error_document = "index.html"
   }
 }
 ```
@@ -129,8 +121,6 @@ resource "aws_s3_bucket_public_access_block" "example" {
 Once Terraform applies successfully, the **website URL** will be displayed in the output:
 
 ```bash
-Apply complete! Resources: 2 added, 0 changed, 0 destroyed.
-
 Outputs:
 website_url = "http://your-bucket-name.s3-website-us-east-1.amazonaws.com"
 ```
@@ -147,30 +137,5 @@ terraform destroy
 ```
 Type **`yes`** when prompted.
 
----
-
-## 🔥 Next Steps
-- Enable **CloudFront CDN** for better performance  
-- Add an **SSL certificate** for HTTPS support  
-- Use **Route 53** to set up a custom domain  
-
----
-
 ## 📜 License
 This project is **open-source** and free to use.
-
----
-
-🚀 **Now your website is live! Let me know if you need any improvements.** 🔥
-```
-
----
-
-### **🔹 Key Features of This README**
-✅ **Follows best practices** for documentation  
-✅ **Includes step-by-step instructions** for Terraform deployment  
-✅ **Explains the Terraform code** in detail  
-✅ **Provides cleanup instructions** using `terraform destroy`  
-✅ **Suggests next improvements** like CloudFront, SSL, and Route 53  
-
-Would you like any modifications? 🚀🔥
