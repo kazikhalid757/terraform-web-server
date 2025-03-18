@@ -1,4 +1,4 @@
-output "public_ip" {
+output "website_url" {
   description = "The public IP of the EC2 instance"
-  value       = module.s3.website_url
+  value       = module.s3_static_website.website_url
 }
