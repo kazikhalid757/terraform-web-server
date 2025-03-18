@@ -1,7 +1,7 @@
-module "ec2_instance" {
-  source        = "./modules/ec2-instance"
-  aws_region    = var.aws_region
-  ami_id        = var.ami_id
-  instance_type = var.instance_type
-  key_name      = var.key_name
+
+module "s3_static_website" {
+  source      =   "./modules/s3"
+  bucket_name =   var.bucket_name
+  aws_region  =   var.aws_region
 }
+
